@@ -1,0 +1,25 @@
+management:
+    endpoint:
+        shutdown:
+            enabled: true
+    endpoints:
+        web:
+            exposure:
+                include: "*"
+
+server:
+    port: 8080
+
+spring:
+    database:
+        driverClassName: org.postgresql.Driver
+    datasource:
+        password: zcldbyh
+        platform: postgres
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: postgres
+    jpa:
+        database: POSTGRESQL
+        hibernate:
+            ddl-auto: update
+        show-sql: true
